@@ -7,12 +7,12 @@ tags:
   - Poisoning & Spoofing
 ---
 
-Link
+#LLMNR
 
-teste
+## O que é?
 
-cenas
+**LLMNR** é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 
-ok
+Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra **(broadcast)** para que o pedido seja satisfeito por alguem que esteja na mesma rede.
 
-fixe
+##
