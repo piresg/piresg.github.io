@@ -1,25 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>{in}secure</title>
-    <link>https://www.insecure.pt/</link>
-    <description>Recent content on {in}secure</description>
+    <title>MITM on {in}secure</title>
+    <link>https://www.insecure.pt/tags/mitm/</link>
+    <description>Recent content in MITM on {in}secure</description>
     <image>
       <url>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Enumeration SMB</title>
-      <link>https://www.insecure.pt/posts/enum_smb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/posts/enum_smb/</guid>
-      <description>daisdasidu oafdaposifud apsodiuaposdiposa dasdpoaisd paosd iad aapdsoiaposid apso dasd poiuspdaoid
-paodipsaodia spd pasodipaodsipaosid
-psaoidpsaodi pzaofipofdispdoi</description>
-    </item>
-    
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/tags/mitm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LLMNR Poisoning</title>
       <link>https://www.insecure.pt/posts/ad_llmnr/</link>
@@ -29,16 +18,6 @@ psaoidpsaodi pzaofipofdispdoi</description>
       <description>LLMNR é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra (broadcast) para que o pedido seja satisfeito por alguem que esteja na mesma rede.
 Teste </description>
-    </item>
-    
-    
-    <item>
-      <title>SMB Relay Attack</title>
-      <link>https://www.insecure.pt/posts/ad_smbrelay/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/posts/ad_smbrelay/</guid>
-      <description>TESTE</description>
     </item>
     
   </channel>

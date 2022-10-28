@@ -74,16 +74,16 @@ params:
         url: tags
 
   # home-info mode
-  homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+  #homeInfoParams:
+  #  Title: "Hi there \U0001F44B"
+  #  Content: Welcome to my blog
 
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/Ibbekin"
+  #socialIcons:
+  #  - name: twitter
+  #    url: "https://twitter.com/Ibbekin"
 
-    - name: github
-      url: "https://github.com/piresg"
+  #  - name: github
+  #    url: "https://github.com/piresg"
 
   analytics:
     google:
