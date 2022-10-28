@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-Sitemap: https://insecure.pt/sitemap.xml
+Sitemap: https://www.insecure.pt/sitemap.xml
