@@ -3,6 +3,8 @@ title: ExampleSite
 paginate: 5
 theme: PaperMod
 
+publishDir: docs
+
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
