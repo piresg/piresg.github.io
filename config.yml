@@ -120,6 +120,10 @@ menu:
       name: categories
       url: /categories/
       weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
     - identifier: tags
       name: tags
       url: /tags/
