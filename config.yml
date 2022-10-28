@@ -21,11 +21,11 @@ params:
   title: "{in}secure"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
-  author: Me
+  #author: Gonçalo Pires
   # author: ["Me", "You"] # multiple authors
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
-  defaultTheme: dark # dark, light, auto
+  defaultTheme: auto # dark, light, auto
   disableThemeToggle: false
 
   ShowReadingTime: true
@@ -61,9 +61,9 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: ExampleSite
-    subtitle: "This is subtitle"
-    imageUrl: ""
+    title: "{in}secure"
+    subtitle: "offsec dumps"
+    imageUrl: https://avatars.githubusercontent.com/u/1218044?v=4
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
@@ -80,11 +80,10 @@ params:
 
   socialIcons:
     - name: twitter
-      url: "https://twitter.com/"
-    - name: stackoverflow
-      url: "https://stackoverflow.com"
+      url: "https://twitter.com/Ibbekin"
+
     - name: github
-      url: "https://github.com/"
+      url: "https://github.com/piresg"
 
   analytics:
     google:
@@ -99,10 +98,10 @@ params:
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
 
-  editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+  #editPost:
+  #  URL: "https://github.com/piresg/piresg.github.io/content/posts"
+  #  Text: "Suggest Changes" # edit text
+  #  appendFilePath: true # to append file path to Edit link
 
   # for search
   # https://fusejs.io/api/options.html
@@ -116,16 +115,16 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    - identifier: categories
-      name: categories
-      url: /categories/
-      weight: 10
+    #- identifier: categories
+    #name: categories
+    #url: /categories/
+    #weight: 10
     - identifier: posts
       name: Posts
       url: /posts/
       weight: 10
     - identifier: tags
-      name: tags
+      name: Tags
       url: /tags/
       weight: 20
 
