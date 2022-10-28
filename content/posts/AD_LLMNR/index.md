@@ -15,8 +15,4 @@ Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede
 
 ## Teste
 
-![Hashcat help](hashcat_ntml.png)
-
-![](responder.png)
-![](hashcatcrack.png)
-![](hashcatcrackfinish.png)
+![](hashcat_ntml.png)
