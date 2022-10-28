@@ -15,9 +15,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.insecure.pt/posts/enum_smb/</guid>
-      <description>daisdasidu oafdaposifud apsodiuaposdiposa dasdpoaisd paosd iad aapdsoiaposid apso dasd poiuspdaoid
-paodipsaodia spd pasodipaodsipaosid
-psaoidpsaodi pzaofipofdispdoi</description>
+      <description>Anonymous Logon nmap --script safe -445 10.10.10.100
+smbmap -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; -P 445 -H 10.129.120.220
+smbclient //10.129.120.220/Replication smbclient -L //10.10.10.100/Share
+Listing Files recursive recurse on ls smbmap -R Replication -H 10.129.5.41 Directory Listing with credentials smbmap -u svc_tgs -p GPPstillStandingStrong2k18 -d ACTIVE.HTB -H 10.129.120.220
+Listing Files with credentials recursive
+smbmap -R -H 10.129.5.41 -u svc_tgs -p GPPstillStandingStrong2k18 -d active.htb
+smbclient //10.10.10.100/Share Dowload all file RECURSE ON PROMPT OFF mget *</description>
     </item>
     
     <item>

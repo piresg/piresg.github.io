@@ -7,18 +7,44 @@ tags:
   - SMB
 ---
 
-# daisdasidu
+### Anonymous Logon
 
-## oafdaposifud
+`nmap --script safe -445 10.10.10.100`
 
-apsodiuaposdiposa dasdpoaisd paosd iad
-aapdsoiaposid apso dasd
-poiuspdaoid
+`smbmap -u "" -p "" -P 445 -H 10.129.120.220`
 
-# paodipsaodia spd
+`smbclient //10.129.120.220/Replication`
+`smbclient -L //10.10.10.100/Share`
 
-pasodipaodsipaosid
+### Listing Files recursive
 
-## psaoidpsaodi
+```bash
+recurse on
+ls
 
-pzaofipofdispdoi
+smbmap -R Replication -H 10.129.5.41
+```
+
+### Directory Listing with credentials
+
+smbmap -u svc_tgs -p GPPstillStandingStrong2k18 -d ACTIVE.HTB -H 10.129.120.220
+
+Listing Files with credentials recursive
+
+smbmap -R -H 10.129.5.41 -u svc_tgs -p GPPstillStandingStrong2k18 -d active.htb
+
+smbclient //10.10.10.100/Share
+Dowload all file
+RECURSE ON
+PROMPT OFF
+mget \*
+
+SMB version 2 is running, and message signing is enabled - prevents SMB Relay Atacks
+
+Mount Share
+
+sudo apt-get install cifs-utils
+mkdir /mnt/Replication
+mount -t cifs //10.10.10.100/Replication /mnt/Replication -o
+username=<username>,password=<password>,domain=active.htb
+grep -R password /mnt/Replication/

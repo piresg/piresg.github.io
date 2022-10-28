@@ -10,14 +10,30 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Enumeration LDAP</title>
+      <link>https://www.insecure.pt/posts/enum_ldap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.insecure.pt/posts/enum_ldap/</guid>
+      <description>Anonymous Search python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U
+python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U --custom &amp;quot;objectClass=\*&amp;quot;
+Get AD Users (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D svc_tgs -w GPPstillStandingStrong2k18 -b &amp;ldquo;DC=active,DC=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user) (!(useraccountcontrol:1.2.840.113556.1.4.803:=2)))&amp;rdquo; samaccountname | grep sAMAccountName
+Get Users with SPN associated (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D SVCTGS -w GPPstillStandingStrong2k18 -b &amp;ldquo;dc=active,dc=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user)(!(useraccountcontrol:1.2.840.113556.1.4.803:=2))(serviceprincipalname=/_))&amp;rdquo; serviceprincipalname | grep -B 1 servicePrincipalName</description>
+    </item>
+    
+    <item>
       <title>Enumeration SMB</title>
       <link>https://www.insecure.pt/posts/enum_smb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.insecure.pt/posts/enum_smb/</guid>
-      <description>daisdasidu oafdaposifud apsodiuaposdiposa dasdpoaisd paosd iad aapdsoiaposid apso dasd poiuspdaoid
-paodipsaodia spd pasodipaodsipaosid
-psaoidpsaodi pzaofipofdispdoi</description>
+      <description>Anonymous Logon nmap --script safe -445 10.10.10.100
+smbmap -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; -P 445 -H 10.129.120.220
+smbclient //10.129.120.220/Replication smbclient -L //10.10.10.100/Share
+Listing Files recursive recurse on ls smbmap -R Replication -H 10.129.5.41 Directory Listing with credentials smbmap -u svc_tgs -p GPPstillStandingStrong2k18 -d ACTIVE.HTB -H 10.129.120.220
+Listing Files with credentials recursive
+smbmap -R -H 10.129.5.41 -u svc_tgs -p GPPstillStandingStrong2k18 -d active.htb
+smbclient //10.10.10.100/Share Dowload all file RECURSE ON PROMPT OFF mget *</description>
     </item>
     
     <item>
