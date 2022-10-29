@@ -13,7 +13,7 @@ tags:
 
 **LLMNR** é um acrónimo de _Link-Local Multicast Resolution_, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 
-Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
+Na pratica é enviado em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
 
 A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é nos enviado o user e a hash da password, que pode ser extraida dependendo da complexidade da mesma.
 

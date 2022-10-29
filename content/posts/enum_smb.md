@@ -1,7 +1,7 @@
 ---
 title: "Enumeration SMB"
 #date: 2022-10-28T18:13:02+01:00
-draft: false
+draft: true
 tags:
   - Enumeration
   - SMB

@@ -8,14 +8,6 @@
   </url><url>
     <loc>https://www.insecure.pt/categories/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/enumeration/</loc>
-  </url><url>
-    <loc>https://www.insecure.pt/posts/enum_ldap/</loc>
-  </url><url>
-    <loc>https://www.insecure.pt/posts/enum_smb/</loc>
-  </url><url>
-    <loc>https://www.insecure.pt/tags/ldap/</loc>
-  </url><url>
     <loc>https://www.insecure.pt/posts/ad_llmnr/</loc>
   </url><url>
     <loc>https://www.insecure.pt/tags/mitm/</loc>
@@ -27,10 +19,6 @@
     <loc>https://www.insecure.pt/posts/</loc>
   </url><url>
     <loc>https://www.insecure.pt/search/</loc>
-  </url><url>
-    <loc>https://www.insecure.pt/tags/smb/</loc>
-  </url><url>
-    <loc>https://www.insecure.pt/posts/ad_smbrelay/</loc>
   </url><url>
     <loc>https://www.insecure.pt/tags/</loc>
   </url>
