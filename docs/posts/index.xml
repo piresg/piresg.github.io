@@ -42,9 +42,9 @@ smbclient //10.10.10.100/Share Dowload all file RECURSE ON PROMPT OFF mget *</de
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.insecure.pt/posts/ad_llmnr/</guid>
-      <description>LLMNR é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
-Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra (broadcast) para que o pedido seja satisfeito por alguem que esteja na mesma rede.
-Teste </description>
+      <description>Definição LLMNR é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
+Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
+A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é nos enviado o user e a hash da password, que pode ser extraida dependendo da complexidade da mesma.</description>
     </item>
     
     <item>
