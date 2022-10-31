@@ -16,8 +16,8 @@
       
       <guid>https://www.insecure.pt/posts/ad_llmnr/</guid>
       <description>Definição LLMNR é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
-Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
-A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é nos enviado o user e a hash da password, que pode ser extraida dependendo da complexidade da mesma.</description>
+Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja respondido por alguem que consiga resolver o nome.
+A vulnerabilidade deste serviço existe porque quando existe resposta ao pedido é enviado o utilizador e a hash da password que pode assim ser extraida dependendo da complexidade da mesma.</description>
     </item>
     
   </channel>

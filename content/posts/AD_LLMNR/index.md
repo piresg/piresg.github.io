@@ -13,21 +13,21 @@ tags:
 
 **LLMNR** é um acrónimo de _Link-Local Multicast Resolution_, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 
-Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
+Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja respondido por alguem que consiga resolver o nome.
 
-A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é nos enviado o user e a hash da password, que pode ser extraida dependendo da complexidade da mesma.
+A vulnerabilidade deste serviço existe porque quando existe resposta ao pedido é enviado o utilizador e a _hash_ da _password_ que pode assim ser extraida dependendo da complexidade da mesma.
 
 É um ataque do tipo **Man in the Middle (MITM)**, em que o atacante responde ao pedido e guarda informação de acesso do utilizador.
 
 ![](LLMNR.drawio.png#center)
 
-1. O utilizador quer resolver o nome \\\ZEMANEL;
-2. O DNS falha em responder porque não conhece o nome;
+1. O utilizador pretende aceder a uma pasta de rede inexistente com o nome \\\ZEMANEL;
+2. O DNS falha em responder porque não conhece o recurso;
 3. É enviado para a rede o mesmo pedido por LLMNR;
-4. A maquina do atacante diz que é ela;
-5. É enviado o user e o hash da password para o atacante.
+4. A maquina do atacante diz que tem o recurso localmente;
+5. É enviado o _user_ e o _hash_ da _password_ para o atacante.
 
-Desta forma o atacante fica com a possibilidade de extrair a password do hash que recebeu, iniciando assim o primeiro passo para acesso ao dominio.
+Desta forma o atacante fica com a possibilidade de extrair a _password_ do _hash_ que recebeu, iniciando assim o primeiro passo para acesso ao dominio.
 
 ## Exploração (PoC)
 
@@ -39,25 +39,27 @@ sudo responder -I eth0 -wd
 
 ![](responder.png)
 
-- o utilizador tenta aceder a uma drive de rede que não existe.
+- o utilizador tenta aceder a uma pasta de rede que não existe.
 
 ![](acessoshared.png)
 
-- O _responder_ indica ao utilizador jcid dizendo que é ele o destino e é enviado o user e a hash da password
+- O _responder_ indica ao utilizador jcid dizendo que é ele o destino e é enviado o _user_ e a _hash_ da _password_
 
 ![](responderwithhash.png)
 
-- Copiamos a hash para um ficheiro e iniciamos o processo de extração da password a partir da hash.
+- Copiamos a hash para um ficheiro e iniciamos o processo de extração da _password_ a partir da _hash_.
 
 ![](hash.png)
 
-- Iremos utilizar a ferramenta hashcat para o efeito, existem outras opções como o **John the ripper**
+- Iremos utilizar a ferramenta _hashcat_ para o efeito, existem outras opções como o **John the ripper**
 
-- 1. O tipo de hash é NTLMV2
+- O tipo de _hash_ é NTLMV2
 
 ![](hashcat_ntml.png)
 
-- 2. ` hashcat -m 5600 jcid.hash /usr/share/wordlists/rockyou.txt`
+- ````bash
+    hashcat -m 5600 jcid.hash /usr/share/wordlists/rockyou.txt```
+  ````
 
 ![](hashcatfinal.png)
 
@@ -69,4 +71,6 @@ Este tipo de ataque é muito eficaz logo pelo manhã quando os utilizadores cheg
 
 ## Mitigação
 
-- Em "Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client colocar **"Turn OFF Multicast Name Resolution"** como disable.
+- Em "Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client colocar **"Turn OFF Multicast Name Resolution"** como enable.
+
+![](miti.png#center)
