@@ -15,7 +15,7 @@ tags:
 
 Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja respondido por alguem que consiga resolver o nome.
 
-A vulnerabilidade deste serviço existe porque quando existe resposta ao pedido é enviado o utilizador e a _hash_ da _password_ que pode assim ser extraida dependendo da complexidade da mesma.
+A vulnerabilidade deste serviço existe na resposta, sendo enviado o utilizador e a _hash_ da _password_ que pode assim ser extraida dependendo da complexidade da mesma.
 
 É um ataque do tipo **Man in the Middle (MITM)**, em que o atacante responde ao pedido e guarda informação de acesso do utilizador.
 
@@ -25,9 +25,9 @@ A vulnerabilidade deste serviço existe porque quando existe resposta ao pedido 
 2. O DNS falha em responder porque não conhece o recurso;
 3. É enviado para a rede o mesmo pedido por LLMNR;
 4. A maquina do atacante diz que tem o recurso localmente;
-5. É enviado o _user_ e o _hash_ da _password_ para o atacante.
+5. É enviado o _user_ e o _hash_ da _password_ para o atacante para que inicie a autenticação.
 
-Desta forma o atacante fica com a possibilidade de extrair a _password_ do _hash_ que recebeu, iniciando assim o primeiro passo para acesso ao dominio.
+Desta forma o atacante fica com a possibilidade de extrair a _password_ do _hash_ que recebeu para se autenticar, iniciando assim o primeiro passo para acesso ao dominio.
 
 ## Exploração (PoC)
 
@@ -51,7 +51,7 @@ sudo responder -I eth0 -wd
 
 ![](hash.png)
 
-- Iremos utilizar a ferramenta _hashcat_ para o efeito, existem outras opções como o **John the ripper**
+- Iremos utilizar a ferramenta **_hashcat_** para o efeito, existem outras opções como o **John the ripper**
 
 - O tipo de _hash_ é NTLMV2
 
@@ -65,7 +65,7 @@ sudo responder -I eth0 -wd
 
 ![](hashcatfinal.png)
 
-E a partir deste momento ja conhecemos o user/dominio assim como a password do utilizador, neste ponto podemos iniciar a exploração da Active Directory, visto que já temos credenciais validas.
+E a partir deste momento já conhecemos o user/dominio assim como a password do utilizador, neste ponto podemos iniciar a exploração da Active Directory, visto que já temos credenciais validas.
 
 ## Informação adicional
 

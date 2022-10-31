@@ -9,16 +9,26 @@ tags:
 
 ## Definição
 
-Em vez de capturarmos as _hashes_ e tentarmos extrair a password podendo não existir sucesso devido à complexidade da password.
-Este ataque usa a _Hash_ capturada e usa a mesma para ganhar acesso noutra maquina, fazendo _relay_ da _hash_.
+Em vez de capturarmos as _hashes_ e tentarmos extrair a password podendo não existir sucesso devido à sua complexidade.
+Este ataque usa a _hash_ capturada e encaminha para ganhar acesso noutra maquina, fazendo _relay_ da _hash_.
+Em caso de sucesso este ataque é usado para movimentação lateral dentro de um dominio.
+
+## Cenário
+
+O cenário é constituido por duas _workstations_ em que o utilizador José Cid é _local administrator_ nas duas maquinas (WS01 e WS02).
+O _SMB Signing_ encontra-se desabilitado.
+
+![](CenarioSMBRelay.jpg#center)
 
 ### Requisitos
 
-- _SMB Signing_ tem estar _disabled_;
-- O user _relayed_ tem de ser administrator das maquinas envolvidas.
+Para que este ataque seja possivel, o ambiente tem de ter os seguintes requisitos:
+
+- _SMB Signing_ _disabled_;
+- O utilizador tem de ser administrator local das maquinas envolvidas.
 
 ## Enumeração
 
-# SMB Signing Disabled
+- #### SMB Signing Disabled
 
 `nmap -x`

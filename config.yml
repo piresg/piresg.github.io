@@ -62,15 +62,15 @@ params:
   profileMode:
     enabled: true # needs to be explicitly set
     title: "Segurança de Informação"
-    #subtitle: "Dumps"
+    subtitle: "Todo o conteúdo aqui apresentado é para fins educacionais onde são demonstrados alguns vectores de ataque assim como a sua defesa. Este portal contem informação perigosa que NÃO PODE SER USADA contra nenhuma pessoa/empresa/instituição. Caso não entenda o propósito SAIA IMEDIATAMENTE deste portal."
     #imageUrl: https://avatars.githubusercontent.com/u/1218044?v=4
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
     buttons:
-      - name: Posts
+      - name: "Artigos"
         url: posts
-      - name: Tags
+      - name: Etiquetas
         url: tags
 
   # home-info mode
@@ -127,15 +127,15 @@ menu:
     #url: /categories/
     #weight: 10
     - identifier: posts
-      name: Posts
+      name: Artigos
       url: /posts/
       weight: 10
     - identifier: tags
-      name: Tags
+      name: Etiquetas
       url: /tags/
       weight: 20
     - identifier: search
-      name: Search
+      name: Procurar
       url: /search/
       weight: 30
 
