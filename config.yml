@@ -1,5 +1,5 @@
 baseURL: "https://www.insecure.pt/"
-title: "{in}secure PT"
+title: "{in}secure"
 paginate: 5
 theme: PaperMod
 
@@ -18,7 +18,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: "{in}secure PT"
+  title: "{in}secure"
   description: "ExampleSite description"
   keywords: [Blog, Portfolio, PaperMod]
   #author: Gonçalo Pires
@@ -54,7 +54,7 @@ params:
     #safari_pinned_tab: "<link / abs url>"
 
   label:
-    text: "{in}secure PT"
+    text: "{in}secure"
     #icon: /apple-touch-icon.png
     #iconHeight: 35
 
