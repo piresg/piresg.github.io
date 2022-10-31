@@ -61,9 +61,9 @@ params:
   # profile-mode
   profileMode:
     enabled: true # needs to be explicitly set
-    title: "{in}secure"
-    subtitle: "offsec dumps"
-    imageUrl: https://avatars.githubusercontent.com/u/1218044?v=4
+    title: "Information Security"
+    #subtitle: "Information Security Dumps"
+    #imageUrl: https://avatars.githubusercontent.com/u/1218044?v=4
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
