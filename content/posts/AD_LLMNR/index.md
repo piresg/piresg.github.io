@@ -19,7 +19,7 @@ A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é n
 
 É um ataque do tipo **Man in the Middle (MITM)**, em que o atacante responde ao pedido e guarda informação de acesso do utilizador.
 
-![](LLMNR.drawio.png)
+![](LLMNR.drawio.png#center)
 
 1. O utilizador quer resolver o nome \\\ZEMANEL;
 2. O DNS falha em responder porque não conhece o nome;
