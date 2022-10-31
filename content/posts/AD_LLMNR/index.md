@@ -13,7 +13,7 @@ tags:
 
 **LLMNR** é um acrónimo de _Link-Local Multicast Resolution_, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 
-Na pratica é enviado em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
+Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja satisfeito por alguem que esteja na mesma rede.
 
 A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é nos enviado o user e a hash da password, que pode ser extraida dependendo da complexidade da mesma.
 
@@ -29,9 +29,9 @@ A vulnerabilidade deste serviço existe porque quando respondemos ao pedido é n
 
 Desta forma o atacante fica com a possibilidade de extrair a password do hash que recebeu, iniciando assim o primeiro passo para acesso ao dominio.
 
-## Exploração (Poc)
+## Exploração (PoC)
 
-- Iniciar o responder
+- Iniciar o _responder_
 
 ```Bash
 sudo responder -I eth0 -wd
@@ -43,7 +43,7 @@ sudo responder -I eth0 -wd
 
 ![](acessoshared.png)
 
-- O responder indica ao utilizador jcid dizendo que é ele o destino e é enviado o user e a hash da password
+- O _responder_ indica ao utilizador jcid dizendo que é ele o destino e é enviado o user e a hash da password
 
 ![](responderwithhash.png)
 
@@ -65,7 +65,7 @@ E a partir deste momento ja conhecemos o user/dominio assim como a password do u
 
 ## Informação adicional
 
-Este tipo de ataque é muito eficaz logo pelo manhã quando os utilizadores chegam ao local de trabalho e depois de almoço. Visto que nessa altura é queando estes começam a aceder a drives partilhadas e/ou a outros serviços.
+Este tipo de ataque é muito eficaz logo pelo manhã quando os utilizadores chegam ao local de trabalho e depois de almoço. Visto que nessa altura é quando estes começam a aceder a drives partilhadas e/ou a outros serviços.
 
 ## Mitigação
 

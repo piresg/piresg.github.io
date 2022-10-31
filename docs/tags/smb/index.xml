@@ -10,27 +10,13 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/tags/smb/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Enumeration SMB</title>
-      <link>https://www.insecure.pt/posts/enum_smb/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/posts/enum_smb/</guid>
-      <description>Anonymous Logon nmap --script safe -445 10.10.10.100
-smbmap -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; -P 445 -H 10.129.120.220
-smbclient //10.129.120.220/Replication smbclient -L //10.10.10.100/Share
-Listing Files recursive recurse on ls smbmap -R Replication -H 10.129.5.41 Directory Listing with credentials smbmap -u svc_tgs -p GPPstillStandingStrong2k18 -d ACTIVE.HTB -H 10.129.120.220
-Listing Files with credentials recursive
-smbmap -R -H 10.129.5.41 -u svc_tgs -p GPPstillStandingStrong2k18 -d active.htb
-smbclient //10.10.10.100/Share Dowload all file RECURSE ON PROMPT OFF mget *</description>
-    </item>
-    
-    <item>
       <title>SMB Relay Attack</title>
       <link>https://www.insecure.pt/posts/ad_smbrelay/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://www.insecure.pt/posts/ad_smbrelay/</guid>
-      <description>TESTE</description>
+      <description>Definição Em vez de capturarmos as hashes e tentarmos extrair a password podendo não existir sucesso devido à complexidade da password. Este ataque usa a Hash capturada e usa a mesma para ganhar acesso noutra maquina, fazendo relay da hash.
+Requisitos SMB Signing tem estar disabled; O user relayed tem de ser administrator das maquinas envolvidas. Enumeração SMB Signing Disabled nmap -x</description>
     </item>
     
   </channel>
