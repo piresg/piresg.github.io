@@ -19,7 +19,7 @@ A vulnerabilidade deste serviço existe porque quando existe resposta ao pedido 
 
 É um ataque do tipo **Man in the Middle (MITM)**, em que o atacante responde ao pedido e guarda informação de acesso do utilizador.
 
-![](LLMNR.drawio.png#center)
+![](LLMNR.drawio.jpg#center)
 
 1. O utilizador pretende aceder a uma pasta de rede inexistente com o nome \\\ZEMANEL;
 2. O DNS falha em responder porque não conhece o recurso;
@@ -57,9 +57,11 @@ sudo responder -I eth0 -wd
 
 ![](hashcat_ntml.png)
 
-- ````bash
-    hashcat -m 5600 jcid.hash /usr/share/wordlists/rockyou.txt```
-  ````
+- ```bash
+
+    hashcat -m 5600 jcid.hash /usr/share/wordlists/rockyou.txt
+
+  ```
 
 ![](hashcatfinal.png)
 
@@ -71,6 +73,6 @@ Este tipo de ataque é muito eficaz logo pelo manhã quando os utilizadores cheg
 
 ## Mitigação
 
-- Em "Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client colocar **"Turn OFF Multicast Name Resolution"** como enable.
+- Em _"Group Policy Editor" > Local Computer Policy > Computer Configuration > Administrative Templates > Network > DNS Client_ colocar **_"Turn OFF Multicast Name Resolution"_** como **_enable_**.
 
 ![](miti.png#center)
