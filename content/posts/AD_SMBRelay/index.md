@@ -78,4 +78,4 @@ De seguida iremos utilizar uma ferramenta da _impacket_ para fazer relay da _has
 
 impacket-ntlmrelayx -smb2support -t 192.168.0.102
 
-[LLMNR](/posts/ad_llmnr/)
+**[LLMNR](/posts/ad_llmnr/#explora%C3%A7%C3%A3o-poc)**
