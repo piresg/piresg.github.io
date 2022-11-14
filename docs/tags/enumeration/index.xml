@@ -10,15 +10,27 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Enumeration LDAP</title>
-      <link>https://www.insecure.pt/enumeration/rpc/</link>
+      <title>BloodHound</title>
+      <link>https://www.insecure.pt/posts/tools/bloodhound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.insecure.pt/enumeration/rpc/</guid>
-      <description>Anonymous Search python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U
-python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U --custom &amp;quot;objectClass=\*&amp;quot;
-Get AD Users (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D svc_tgs -w GPPstillStandingStrong2k18 -b &amp;ldquo;DC=active,DC=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user) (!(useraccountcontrol:1.2.840.113556.1.4.803:=2)))&amp;rdquo; samaccountname | grep sAMAccountName
-Get Users with SPN associated (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D SVCTGS -w GPPstillStandingStrong2k18 -b &amp;ldquo;dc=active,dc=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user)(!(useraccountcontrol:1.2.840.113556.1.4.803:=2))(serviceprincipalname=/_))&amp;rdquo; serviceprincipalname | grep -B 1 servicePrincipalName</description>
+      <guid>https://www.insecure.pt/posts/tools/bloodhound/</guid>
+      <description>Instalação A ferramenta BloodHound tem como requisito a instalação de uma base de dados Neo4J. Dependendo da versão java instalada poderão ter problemas em correr a ferramenta, visto que apenas é suportada a versão 11 do JDK.
+Os passos abaixo ajudam na configuração do ambiente.
+sudo apt install bloodhound
+Instala os pacotes necessários java &amp;ndash;version
+para confirmarmos a versão sudo update-alternatives &amp;ndash;config java
+sudo update-alternatives &amp;ndash;config javac
+sudo apt-cache search openjdk</description>
+    </item>
+    
+    <item>
+      <title>Powerview</title>
+      <link>https://www.insecure.pt/posts/tools/powerview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.insecure.pt/posts/tools/powerview/</guid>
+      <description>Activar PowerView Desabilitar Execution policy e carregar script powershell -ep bypass PS C:\Users\jcid&amp;gt; powershell -ep bypassWindows PowerShellCopyright (C) Microsoft Corporation. All rights reserved.Try the new cross-platform PowerShell https://aka.ms/pscore6PS C:\Users\jcid&amp;gt; . .\PowerView.ps1 Comandos Uteis Informação de Dominio Get-NetDomain Get-NetDomainConroller Forest : insecure.localDomainControllers : {DC01.insecure.local}Children : {}DomainMode : UnknownDomainModeLevel : 7Parent :PdcRoleOwner : DC01.insecure.localRidRoleOwner : DC01.insecure.localInfrastructureRoleOwner : DC01.insecure.localName : insecure.</description>
     </item>
     
   </channel>

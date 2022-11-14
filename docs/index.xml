@@ -10,6 +10,21 @@
     </image>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>BloodHound</title>
+      <link>https://www.insecure.pt/posts/tools/bloodhound/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.insecure.pt/posts/tools/bloodhound/</guid>
+      <description>Instalação A ferramenta BloodHound tem como requisito a instalação de uma base de dados Neo4J. Dependendo da versão java instalada poderão ter problemas em correr a ferramenta, visto que apenas é suportada a versão 11 do JDK.
+Os passos abaixo ajudam na configuração do ambiente.
+sudo apt install bloodhound
+Instala os pacotes necessários java &amp;ndash;version
+para confirmarmos a versão sudo update-alternatives &amp;ndash;config java
+sudo update-alternatives &amp;ndash;config javac
+sudo apt-cache search openjdk</description>
+    </item>
+    
+    <item>
       <title>IPV6 DNS Takeover via mitm6</title>
       <link>https://www.insecure.pt/posts/mitm6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -27,6 +42,15 @@
       <description>Definição LLMNR é um acrónimo de Link-Local Multicast Resolution, está activo por defeito e é usado para resolução de nomes quando não existe resposta do DNS ao pedido.
 Na pratica é enviado, em ultimo recurso, um pedido para todo o segmento de rede onde a máquina se encontra na tentativa que o pedido seja respondido por alguem que consiga resolver o nome.
 A vulnerabilidade deste serviço existe na resposta, sendo enviado o utilizador e a hash da password que pode assim ser extraida dependendo da complexidade da mesma.</description>
+    </item>
+    
+    <item>
+      <title>Powerview</title>
+      <link>https://www.insecure.pt/posts/tools/powerview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.insecure.pt/posts/tools/powerview/</guid>
+      <description>Activar PowerView Desabilitar Execution policy e carregar script powershell -ep bypass PS C:\Users\jcid&amp;gt; powershell -ep bypassWindows PowerShellCopyright (C) Microsoft Corporation. All rights reserved.Try the new cross-platform PowerShell https://aka.ms/pscore6PS C:\Users\jcid&amp;gt; . .\PowerView.ps1 Comandos Uteis Informação de Dominio Get-NetDomain Get-NetDomainConroller Forest : insecure.localDomainControllers : {DC01.insecure.local}Children : {}DomainMode : UnknownDomainModeLevel : 7Parent :PdcRoleOwner : DC01.insecure.localRidRoleOwner : DC01.insecure.localInfrastructureRoleOwner : DC01.insecure.localName : insecure.</description>
     </item>
     
     

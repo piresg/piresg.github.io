@@ -6,7 +6,11 @@
   </url><url>
     <loc>https://www.insecure.pt/tags/active-directory/</loc>
   </url><url>
+    <loc>https://www.insecure.pt/posts/tools/bloodhound/</loc>
+  </url><url>
     <loc>https://www.insecure.pt/categories/</loc>
+  </url><url>
+    <loc>https://www.insecure.pt/tags/enumeration/</loc>
   </url><url>
     <loc>https://www.insecure.pt/tags/ipv6/</loc>
   </url><url>
@@ -21,6 +25,8 @@
     <loc>https://www.insecure.pt/tags/poisoning-spoofing/</loc>
   </url><url>
     <loc>https://www.insecure.pt/posts/</loc>
+  </url><url>
+    <loc>https://www.insecure.pt/posts/tools/powerview/</loc>
   </url><url>
     <loc>https://www.insecure.pt/search/</loc>
   </url><url>
