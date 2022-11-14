@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Enumerations on {in}secure</title>
+    <link>https://www.insecure.pt/enumeration/</link>
+    <description>Recent content in Enumerations on {in}secure</description>
+    <image>
+      <url>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/enumeration/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Enumeration LDAP</title>
+      <link>https://www.insecure.pt/enumeration/rpc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.insecure.pt/enumeration/rpc/</guid>
+      <description>Anonymous Search python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U
+python3 windapsearch.py -d htb.local -u &amp;quot;&amp;quot; -p &amp;quot;&amp;quot; --dc-ip 10.129.139.154 -U --custom &amp;quot;objectClass=\*&amp;quot;
+Get AD Users (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D svc_tgs -w GPPstillStandingStrong2k18 -b &amp;ldquo;DC=active,DC=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user) (!(useraccountcontrol:1.2.840.113556.1.4.803:=2)))&amp;rdquo; samaccountname | grep sAMAccountName
+Get Users with SPN associated (with credentials) ldapsearch -x -H ldap://10.129.5.52:389 -D SVCTGS -w GPPstillStandingStrong2k18 -b &amp;ldquo;dc=active,dc=htb&amp;rdquo; -s sub &amp;ldquo;(&amp;amp;(objectCategory=person)(objectClass=user)(!(useraccountcontrol:1.2.840.113556.1.4.803:=2))(serviceprincipalname=/_))&amp;rdquo; serviceprincipalname | grep -B 1 servicePrincipalName</description>
+    </item>
+    
+  </channel>
+</rss>
