@@ -1,4 +1,4 @@
-baseURL: "https://www.insecure.pt/"
+baseURL: "/"
 title: "{in}secure"
 paginate: 5
 theme: PaperMod
