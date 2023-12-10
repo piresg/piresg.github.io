@@ -1,37 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Enumeration on {in}secure</title>
-    <link>https://www.insecure.pt/tags/enumeration/</link>
+    <link>/tags/enumeration/</link>
     <description>Recent content in Enumeration on {in}secure</description>
-    <image>
-      <url>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="/tags/enumeration/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BloodHound</title>
-      <link>https://www.insecure.pt/posts/tools/bloodhound/</link>
+      <link>/posts/tools/bloodhound/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/posts/tools/bloodhound/</guid>
-      <description>Instalação A ferramenta BloodHound tem como requisito a instalação de uma base de dados Neo4J. Dependendo da versão java instalada poderão ter problemas em correr a ferramenta, visto que apenas é suportada a versão 11 do JDK.
-Os passos abaixo ajudam na configuração do ambiente.
-sudo apt install bloodhound
-Instala os pacotes necessários java &amp;ndash;version
-para confirmarmos a versão sudo update-alternatives &amp;ndash;config java
-sudo update-alternatives &amp;ndash;config javac
-sudo apt-cache search openjdk</description>
+      <guid>/posts/tools/bloodhound/</guid>
+      <description>Instalação A ferramenta BloodHound tem como requisito a instalação de uma base de dados Neo4J. Dependendo da versão java instalada poderão ter problemas em correr a ferramenta, visto que apenas é suportada a versão 11 do JDK.&#xA;Os passos abaixo ajudam na configuração do ambiente.&#xA;sudo apt install bloodhound&#xA;Instala os pacotes necessários java &amp;ndash;version&#xA;para confirmarmos a versão sudo update-alternatives &amp;ndash;config java&#xA;sudo update-alternatives &amp;ndash;config javac&#xA;sudo apt-cache search openjdk</description>
     </item>
-    
     <item>
       <title>Powerview</title>
-      <link>https://www.insecure.pt/posts/tools/powerview/</link>
+      <link>/posts/tools/powerview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/posts/tools/powerview/</guid>
-      <description>Activar PowerView Desabilitar Execution policy e carregar script powershell -ep bypass PS C:\Users\jcid&amp;gt; powershell -ep bypassWindows PowerShellCopyright (C) Microsoft Corporation. All rights reserved.Try the new cross-platform PowerShell https://aka.ms/pscore6PS C:\Users\jcid&amp;gt; . .\PowerView.ps1 Comandos Uteis Informação de Dominio Get-NetDomain Get-NetDomainConroller Forest : insecure.localDomainControllers : {DC01.insecure.local}Children : {}DomainMode : UnknownDomainModeLevel : 7Parent :PdcRoleOwner : DC01.insecure.localRidRoleOwner : DC01.insecure.localInfrastructureRoleOwner : DC01.insecure.localName : insecure.</description>
+      <guid>/posts/tools/powerview/</guid>
+      <description>Activar PowerView Desabilitar Execution policy e carregar script powershell -ep bypass PS C:\Users\jcid&amp;gt; powershell -ep bypass&#xD;Windows PowerShell&#xD;Copyright (C) Microsoft Corporation. All rights reserved.&#xD;Try the new cross-platform PowerShell https://aka.ms/pscore6&#xD;PS C:\Users\jcid&amp;gt; . .\PowerView.ps1 Comandos Uteis Informação de Dominio Get-NetDomain Get-NetDomainConroller Forest : insecure.local&#xD;DomainControllers : {DC01.insecure.local}&#xD;Children : {}&#xD;DomainMode : Unknown&#xD;DomainModeLevel : 7&#xD;Parent :&#xD;PdcRoleOwner : DC01.insecure.local&#xD;RidRoleOwner : DC01.insecure.local&#xD;InfrastructureRoleOwner : DC01.insecure.local&#xD;Name : insecure.</description>
     </item>
-    
   </channel>
 </rss>

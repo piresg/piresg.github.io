@@ -1,76 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on {in}secure</title>
-    <link>https://www.insecure.pt/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on {in}secure</description>
-    <image>
-      <url>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://www.insecure.pt/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://www.insecure.pt/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Directory</title>
-      <link>https://www.insecure.pt/tags/active-directory/</link>
+      <link>/tags/active-directory/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/active-directory/</guid>
+      <guid>/tags/active-directory/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Enumeration</title>
-      <link>https://www.insecure.pt/tags/enumeration/</link>
+      <link>/tags/enumeration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/enumeration/</guid>
+      <guid>/tags/enumeration/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>IPV6</title>
-      <link>https://www.insecure.pt/tags/ipv6/</link>
+      <link>/tags/ipv6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/ipv6/</guid>
+      <guid>/tags/ipv6/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>MITM</title>
-      <link>https://www.insecure.pt/tags/mitm/</link>
+      <link>/tags/mitm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/mitm/</guid>
+      <guid>/tags/mitm/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>NTLMV2</title>
-      <link>https://www.insecure.pt/tags/ntlmv2/</link>
+      <link>/tags/ntlmv2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/ntlmv2/</guid>
+      <guid>/tags/ntlmv2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Poisoning &amp; Spoofing</title>
-      <link>https://www.insecure.pt/tags/poisoning-spoofing/</link>
+      <link>/tags/poisoning-spoofing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/poisoning-spoofing/</guid>
+      <guid>/tags/poisoning-spoofing/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>SMB</title>
-      <link>https://www.insecure.pt/tags/smb/</link>
+      <link>/tags/smb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.insecure.pt/tags/smb/</guid>
+      <guid>/tags/smb/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

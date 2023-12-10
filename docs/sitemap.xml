@@ -2,38 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.insecure.pt/</loc>
+    <loc>/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/active-directory/</loc>
+    <loc>/tags/active-directory/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/tools/bloodhound/</loc>
+    <loc>/posts/tools/bloodhound/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/enumeration/</loc>
+    <loc>/tags/enumeration/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/ipv6/</loc>
+    <loc>/tags/ipv6/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/mitm6/</loc>
+    <loc>/posts/mitm6/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/ad_llmnr/</loc>
+    <loc>/posts/ad_llmnr/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/mitm/</loc>
+    <loc>/tags/mitm/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/ntlmv2/</loc>
+    <loc>/tags/ntlmv2/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/poisoning-spoofing/</loc>
+    <loc>/tags/poisoning-spoofing/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/</loc>
+    <loc>/posts/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/tools/powerview/</loc>
+    <loc>/posts/tools/powerview/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/search/</loc>
+    <loc>/search/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/smb/</loc>
+    <loc>/tags/smb/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/posts/ad_smbrelay/</loc>
+    <loc>/posts/ad_smbrelay/</loc>
   </url><url>
-    <loc>https://www.insecure.pt/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
